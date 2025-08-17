@@ -30,11 +30,13 @@
   From an analysis of the annual salary based on the position held, Figure 1 below demonstrates the top 10 of the 128 job titles presented for earnings via a dashboard produced in Power BI. While an analysis on job position earnings can pose as a daunting challenge, general observations can be observed to understand potential characteristics that contribute to higher earning positions. For instance all 10 of the positions hold the key words chief, director, or VP. This is indictive of upper management positions carrying greater earning potential.
 
 <img width="508" height="285" alt="Dashboard1" src="https://github.com/user-attachments/assets/4c3804b7-26a1-4919-8ace-2ee7798426a2" />
+
 **Figure 1: Dashboard displaying average salary by position with a filter changing whether the job is a senior position or not along with a pie chart for the percentage by gender.**
 
   Additional work conducted in analyzing general associations between annual salary, education level, and country yields visual aids presented in Figure 2 below in which average earnings between countries appears fairly consistent although higher education level appears to definitively provide greater annual earnings.
 
 <img width="508" height="285" alt="Dashboard2" src="https://github.com/user-attachments/assets/26fd24a8-59c0-4ec3-8721-c2308d0d7786" />
+
 **Figure 2: Dashboard displaying average salary by education level along with average salary by country with a map and filter option.**
 
   To assess the potential of multicollinearity, first, Anderson-Darling tests were applied to both the age and years of experience variables. These yielded p-values less than 2.2e-16 rejecting the null hypothesis concluding non normal data. Accordingly, the Spearman rank correlation was applied between said variables resulting in a correlation of 0.9460367 serving as a potential indicator of multicollinearity. This was also confirmed through a variance inflation factor (VIF) of 8.272077, which is likely to carry high inflation for the standard error and unreliable coefficients.
@@ -42,14 +44,17 @@
   Analyzing the relation between various categorical variables with respect to predicting salary demonstrated that education level had unequal variance between groups and a Kruskal-Wallis test to support a statistically significant difference in central tendency between education levels. A post-hoc analysis could utilize Dunn’s test to more aptly investigate differences in groups. For both race and country, boxplots visually displayed approximately equal variances followed by ANOVA models demonstrating no statistical contribution; neither race nor country predicted salary from their respective coefficients along with no statistically significant difference in the means of race and countries via the global F-statistic. While assessing the assumption of normality, both models failed Anderson-Darling tests and visually didn’t fit well for Q-Q plots. From these findings, Kruskal-Wallis tests were utilized although these findings aligned with the ANOVA models’ predictions towards no statistical difference between groups. An example of preliminary analysis towards assessing variance via box plots is shown in Figure 3 below along with post analysis concerning normality within residuals shown in Figure 4's Q-Q plot.
 
 <img width="1299" height="657" alt="image" src="https://github.com/user-attachments/assets/82f783cc-eab3-4fe3-ba2e-cfc52420571a" />
+
 **Figure 3: Boxplot demonstrating the relationship between salary and race.**
 
 <img width="894" height="763" alt="image" src="https://github.com/user-attachments/assets/657628dd-d38b-4713-8f29-a0b33f852d12" />
+
 **Figure 4: Q-Q Plot for theoretical and experimental quantiles from one-way ANOVA between race and salary.**
 
   For the dichotomous variables gender and senior, the resulting histograms, as shown in Figure 5 below, demonstrated non normally distributed data. Accordingly, Mann Whitney U tests were applied to assess differences in groups. For both gender and senior, there was a statistically significant difference in salary earnings. 
 
 <img width="896" height="758" alt="image" src="https://github.com/user-attachments/assets/aa9fc8f8-adac-441f-a306-929a61af3ce9" />
+
 **Figure 5: Histogram example of salary by gender.**
 
   From the analysis conducted, the ridge regression model served to moderately predict salary via age and years of experience, education level, gender, and senior position holding proved to hold a statistically significant difference from one and other while country and race did not. Additionally, leadership and higher end corporate positions yielded higher annual servings. From these findings, greater education, with a persuit in senior positions along with leadership and managerial roles are the strongest controllable factors when attempting to pursue economic growth.
