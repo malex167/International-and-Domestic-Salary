@@ -29,13 +29,14 @@
 
   From an analysis of the annual salary based on the position held, Figure 1 below demonstrates the top 10 of the 128 job titles presented for earnings via a dashboard produced in Power BI. While an analysis on job position earnings can pose as a daunting challenge, general observations can be observed to understand potential characteristics that contribute to higher earning positions. For instance all 10 of the positions hold the key words chief, director, or VP. This is indictive of upper management positions carrying greater earning potential.
 
-<img width="508" height="285" alt="Dashboard1" src="https://github.com/user-attachments/assets/4c3804b7-26a1-4919-8ace-2ee7798426a2" />
+<img width="1180" height="660" alt="image" src="https://github.com/user-attachments/assets/80825779-0606-4985-ac0a-62b7ad3b34f5" />
 
 **Figure 1: Dashboard displaying average salary by position with a filter changing whether the job is a senior position or not along with a pie chart for the percentage by gender.**
 
   Additional work conducted in analyzing general associations between annual salary, education level, and country yields visual aids presented in Figure 2 below in which average earnings between countries appears fairly consistent although higher education level appears to definitively provide greater annual earnings.
 
-<img width="508" height="285" alt="Dashboard2" src="https://github.com/user-attachments/assets/26fd24a8-59c0-4ec3-8721-c2308d0d7786" />
+<img width="1181" height="658" alt="image" src="https://github.com/user-attachments/assets/7671b854-b888-48d3-9f28-f44ae919c4d5" />
+
 
 **Figure 2: Dashboard displaying average salary by education level along with average salary by country with a map and filter option.**
 
